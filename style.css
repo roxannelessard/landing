@@ -1,0 +1,121 @@
+/* style.css */
+/* for the banner and footer, comment faire pour enlever les mini espaces blancs tout le tour? */
+
+body {
+    font-family: 'Overpass', sans-serif;
+    color: #404042;
+    font-size: 18px;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Chivo', sans-serif;
+  }
+  
+  a {
+    color: #1A48E3;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s;
+  }
+
+  p {
+    color:white;
+    opacity: .7; /* to show text opacity in banner */
+  }
+  
+  a:hover {
+    color: #CE2FAE;
+  }
+
+  .banner {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 150px;
+    text-align: center;
+    color: white;
+}
+
+.banner p {
+    color: white;
+    font-size: 24px;
+  }
+
+.banner h1 {
+    color: white;
+    font-size: 45px;
+    margin: 0;
+  }
+
+.buttonblue {
+    color:white;
+    background-color:#1A48E3;
+    padding: 16px 48px;
+    border-radius: 4px; /* coins ronds du boutton */
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    transition: .3s; /* transition des couleurs */
+}
+
+.container {  /* I don't understand why those 2 here??? */
+    width: 800px;
+    margin: auto;
+ }
+
+.card-white {
+    background: white;
+    box-shadow: 0 0 16px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    width: 200px;
+    text-align: center;
+    padding: 24px;
+    margin: 8px;
+    flex-grow: 1;
+}
+
+.footer { 
+    background-color: grey;
+    text-align: center;
+    padding: 25px;
+ }
+
+ .grid-container-cards {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr; /* Specifies the size of the columns, and how many columns in a grid layout*/
+     grid-gap: 16px;
+     padding-bottom: 20px;
+ }
+
+  /* I need to study more this part................ */
+
+ /* Cards media queries */
+@media (max-width: 800px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+    
+    .card-white {
+      width: auto;
+    }
+  }
+    
+  /* Container media queries */
+  @media (min-width: 500px) {
+    .container {
+      width: 400px;
+    }
+  }
+  
+  
+  @media (min-width: 800px) {
+    .container {
+      width: 600px;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .container {
+      width: 800px;
+    }
+  }
